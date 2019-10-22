@@ -9,7 +9,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 
 RUN set -x \
     && apt-get update \
-    && apt-get install xvfb
+    && apt-get install xvfb \
     && apt-get install -y \
         google-chrome-stable
 
